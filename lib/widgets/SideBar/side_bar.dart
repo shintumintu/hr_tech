@@ -65,86 +65,87 @@ class _SideBarState extends State<SideBar>
             children: <Widget>[
               Expanded(
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: const Color(0xFF262AAA),
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(
-                        height: 100,
-                      ),
-                      ListTile(
-                        title: Text(
-                          "Candidate",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.w800),
-                        ),
-                        leading: CircleAvatar(
-                          child: Icon(
-                            Icons.perm_identity,
-                            color: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    color: const Color(0xFF262AAA),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 100,
                           ),
-                          radius: 40,
-                        ),
-                      ),
-                      Divider(
-                        height: 64,
-                        thickness: 0.5,
-                        color: Colors.white.withOpacity(0.3),
-                        indent: 32,
-                        endIndent: 32,
-                      ),
-                      MenuItem(
-                        title: "Candidate",
-                        onTap: () {
-                          onIconPressed();
-                        },
-                      ),
-                      MenuItem(
-                        title: "Employee",
-                        onTap: () {
-                          onIconPressed();
-                        },
-                      ),
-                      MenuItem(
-                        title: "Assesment",
-                        onTap: () {
-                          onIconPressed();
-                        },
-                      ),
-                      MenuItem(
-                        title: "Skill-Upgrade",
-                      ),
-                      MenuItem(
-                        title: "Employer",
-                      ),
-                      MenuItem(
-                        title: "HR-Company",
-                      ),
-                      Divider(
-                        height: 64,
-                        thickness: 0.5,
-                        color: Colors.white.withOpacity(0.3),
-                        indent: 32,
-                        endIndent: 32,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.settings,
-                            color: Colors.white,
+                          ListTile(
+                            title: Text(
+                              "Candidate",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w800),
+                            ),
+                            leading: CircleAvatar(
+                              child: Icon(
+                                Icons.perm_identity,
+                                color: Colors.white,
+                              ),
+                              radius: 40,
+                            ),
                           ),
-                          Icon(
-                            Icons.ac_unit_outlined,
-                            color: Colors.white,
+                          Divider(
+                            height: 64,
+                            thickness: 0.5,
+                            color: Colors.white.withOpacity(0.3),
+                            indent: 32,
+                            endIndent: 32,
                           ),
+                          MenuItem(
+                            title: "Candidate",
+                            onTap: () {
+                              onIconPressed();
+                            },
+                          ),
+                          MenuItem(
+                            title: "Employee",
+                            onTap: () {
+                              onIconPressed();
+                            },
+                          ),
+                          MenuItem(
+                            title: "Assesment",
+                            onTap: () {
+                              onIconPressed();
+                            },
+                          ),
+                          MenuItem(
+                            title: "Skill-Upgrade",
+                          ),
+                          MenuItem(
+                            title: "Employer",
+                          ),
+                          MenuItem(
+                            title: "HR-Company",
+                          ),
+                          Divider(
+                            height: 64,
+                            thickness: 0.5,
+                            color: Colors.white.withOpacity(0.3),
+                            indent: 32,
+                            endIndent: 32,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Icon(
+                                Icons.settings,
+                                color: Colors.white,
+                              ),
+                              Icon(
+                                Icons.ac_unit_outlined,
+                                color: Colors.white,
+                              ),
+                            ],
+                          )
                         ],
-                      )
-                    ],
-                  ),
-                ),
+                      ),
+                    )),
               ),
               Align(
                 alignment: Alignment(0, -0.9),

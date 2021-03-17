@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hr_tech/Pages/HomePage/home_page.dart';
+import 'package:hr_tech/Pages/HomePage/main_page.dart';
 import 'package:hr_tech/Pages/Register/register.dart';
 import 'package:hr_tech/widgets/busy_button.dart';
 import 'package:hr_tech/widgets/custom_button.dart';
@@ -57,7 +59,12 @@ class LoginPage extends StatelessWidget {
             ),
             BusyButton(
               title: 'Login',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainPage()),
+                );
+              },
               color: Colors.pinkAccent,
               height: 50,
               width: 200,
