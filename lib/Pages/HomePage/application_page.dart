@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hr_tech/Pages/Education/education.dart';
+import 'package:hr_tech/Pages/E-Learning/e-learning_page.dart';
 import 'package:hr_tech/Pages/Education/education_category.dart';
 import 'package:hr_tech/Pages/Profile/myProfile_page.dart';
 import 'package:hr_tech/Pages/SocialProfile/social_profile_page.dart';
@@ -100,7 +100,11 @@ class ApplicationPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 50, right: 50),
                   child: CustomButton2(
                     onTap: () {
-                      print('E-Learning button clicked');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ELearningPage()),
+                      );
                     },
                     text: Text('E-Learning'),
                     icon: Icons.computer,

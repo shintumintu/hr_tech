@@ -74,6 +74,7 @@ class WorkExperiancePage extends StatelessWidget {
                       ),
                       Expanded(
                         child: TextField(
+                          controller: _jobcontrollers,
                           textAlign: TextAlign.center,
                           decoration: InputDecoration(
                             labelText: "End-Date",

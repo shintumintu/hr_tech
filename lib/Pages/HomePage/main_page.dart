@@ -2,12 +2,10 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hr_tech/Pages/HomePage/application_page.dart';
-import 'package:hr_tech/widgets/shared_styles.dart';
-
 import 'chat_page.dart';
 import 'game_page.dart';
 import 'home_page.dart';
-import 'reportCard_page.dart';
+import '../ReportCard/reportCard_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
