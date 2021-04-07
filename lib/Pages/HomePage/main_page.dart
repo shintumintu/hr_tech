@@ -15,7 +15,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int pageIndex = 0;
 
-  Widget _showPage = new ApplicationPage();
+  Widget _showPage = new HomePage();
   Widget _pageChooser(int page) {
     switch (page) {
       case 0:

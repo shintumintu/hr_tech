@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hr_tech/Pages/E-Learning/e-learning_page.dart';
 import 'package:hr_tech/Pages/Education/education_category.dart';
 import 'package:hr_tech/Pages/Profile/myProfile_page.dart';
+import 'package:hr_tech/Pages/SkillSet/skill_set_page.dart';
 import 'package:hr_tech/Pages/SocialProfile/social_profile_page.dart';
 import 'package:hr_tech/Pages/WorkExperiance/work_experiance_page.dart';
 import 'package:hr_tech/widgets/custom_button2.dart';
@@ -117,9 +118,12 @@ class ApplicationPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 50, right: 50),
                   child: CustomButton2(
                     onTap: () {
-                      print('Skill-Set button clicked');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SkillSetPage()),
+                      );
                     },
-                    text: Text('Skill-Set'),
+                    text: Text('Skill-Upgrade'),
                     icon: FontAwesomeIcons.bookOpen,
                   ),
                 )

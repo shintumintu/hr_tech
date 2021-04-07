@@ -8,7 +8,8 @@ import 'package:hr_tech/widgets/input_field.dart';
 import 'package:hr_tech/widgets/text_link.dart';
 
 class LoginPage extends StatelessWidget {
-  TextEditingController textEditingController;
+  final TextEditingController textEditingController;
+  const LoginPage({Key key, this.textEditingController}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
